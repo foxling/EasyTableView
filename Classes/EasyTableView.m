@@ -336,6 +336,11 @@
 	return indexPath;
 }
 
+- (void)deselectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:animated];
+    _selectedIndexPath = nil;
+}
+
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
 	if ([delegate respondsToSelector:@selector(easyTableView:scrolledToOffset:)])

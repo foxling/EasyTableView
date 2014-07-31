@@ -81,6 +81,7 @@ typedef enum {
 - (void)setContentOffset:(CGPoint)offset animated:(BOOL)animated;
 - (void)setScrollFraction:(CGFloat)fraction animated:(BOOL)animated;
 - (void)selectCellAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
+- (void)deselectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
 - (UIView *)viewAtIndexPath:(NSIndexPath *)indexPath;
 - (NSIndexPath*)indexPathForView:(UIView *)cell;
 - (void)reloadData;
